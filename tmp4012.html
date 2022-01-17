@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tmp4012</title>
+        <style type="text/css">
+            ol{
+                width:75%;
+                list-style-type: lower-roman;
+                list-style-position: inside;
+            }
+            ul{
+                width:80%;
+                border:5px solid black;
+                list-style: inside disc ;
+                margin: 0px auto 0px auto;
+                overflow: hidden;
+            }
+            li{
+                word-break: break-all;
+                border: 2px solid black;
+                margin:5px 0px 5px -40px;
+            }
+            #table{
+                width:100%;
+                max-width:800px;
+                margin: 10px auto 10px auto;
+                text-align: center;
+            }
+            #table table{
+                width:100%;
+                margin: 0px auto 0px auto;
+                text-align: center;
+                border-spacing: 1px 1px;
+                border-collapse: separate;
+            }l
+            #table th,td{
+                padding:6px 6px 6px 6px;
+                /* border:2px solid black; */
+                empty-cells: hide;
+                
+            }
+            #table th{
+                text-transform: uppercase;
+                border-top: 3px solid grey;
+                border-bottom: 3px solid grey;
+            }
+            
+            #table tr.even{
+                background-color: #efefef;
+            }
+            #table td:hover, th:hover{
+                background-color: #c3e6e5;
+            }
+            #table td.money{
+                text-align: right;
+            }
+            #frame fieldset{
+                width: 300px;
+                margin:10px auto 10px auto;
+                padding:20px;
+                text-align: center;
+            }
+            #frame fieldset div{
+                width:70%;
+                margin:0px auto 0px auto;
+                padding:10px;
+                text-align: left;
+                line-height: 200%;
+            }
+            #frame input.password ,input.register{
+                font-size:100%;
+                color:black;
+                background-color:#ffffff;
+                border:1px solid black;
+                border-radius: 0px;
+                border-color: grey;
+                background-repeat: no-repeat;
+                background-position: 8px 9px;
+                padding:2px;
+            }
+            input#username:hover{
+                background-color: #c3e6e6;
+            }
+            input#submit{
+                color: #444444;
+                text-shadow: 0px 1px 1px #ffffff;
+                border-bottom: 2px solid #b2b2b2;
+                background-color: #b9e4e3;
+                background: -webkit-gradient(linear, left top,
+                left bottom, from(#beeae9), to(#a8cfce));
+                background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+                background: -o-linear-gradient(top, #beeae9, #a8cfce);
+                background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+            }
+            input#submit:hover{
+                color:#333333;
+                border: 1px solid #a4a4a4;
+                border-top: 2px solid #b2b2b2;
+                background-color: #a0dbc4;
+                background:-webkit-gradient(linear, left top,
+                left bottom, from(#a8cfce), to(#beeae9));
+                background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+                background: -o-linear-gradient(top, #a8cfce, #beeae9);
+                background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+            }
+            fieldset{
+                width: 350px;
+                border: 1px solid #dcdcdc;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: right;
+            }
+            legend{
+                background-color: #efefef;
+                border: 1px solid #dcdcdc;
+                border-radius: 10px;
+                padding: 10px 20px;
+                text-align: left;
+                text-transform: uppercase;
+            }
+            div#extra div{
+                border-bottom: 1px solid #efefef;
+                margin: 10px;
+                padding-bottom: 10px;
+                width:260px;
+            }
+            div#extra div{
+                text-align: center;
+                margin: 0px auto 0px auto;
+            }
+            div#extra .title{
+                float: left;
+                width: 60px;
+                text-align: right;
+                padding-right: 10px;
+            }
+            div#extra .submit{
+                text-align: right;
+                cursor: wait;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Hello</h2>
+        <ul>
+            <li>ahdaaaaaaaaaaaaaaaa</li>
+            <li>bcdaaaaaaaaaaaaaaaaaaaaa</li>
+            <li>efgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</li>
+        </ul>
+        <div id="table">
+            <h1>First Edition Auctions</h1>
+            <div id="table2">
+                <table>
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Reserve Price</th>
+                        <th>Current Bid</th>
+                    </tr>
+                    <tr>
+                        <td>EE. Cummings</td>
+                        <td>Tulips & Chimneys</td>
+                        <td class="money">$2,000.00</td>
+                        <td class="money">$2,642.50</td>
+                    </tr>
+                    <tr class="even">
+                        <td>Charles d'Orleans</td>
+                        <td>Poemes</td>
+                        <td></td>
+                        <td class="money">$5,866.00</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <div id="frame">
+            <fieldset>
+                <legend>登录</legend>
+                <div class="username">
+                    <label>六位数学号:<br /></label>
+                    <input id="username" type="text" name="username" />
+                    
+                </div>
+                <div class="password">
+                    <label>密码:<br />
+                        <input id="password" type="text" name="password" placeholder="未设置则不用填" />
+                    </label>
+                </div>
+                <div class="register">
+                    <input id="submit" type="submit" value="finished!" />
+                </div>
+            </fieldset>
+        </div>
+        <div id="extra">
+            <div>
+                <label for="name" class="title">Name: </label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div>
+                <label for="email" class="title">Email: </label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div>
+                <span class="title">Gender: </span>
+                <input type="radio" name="gender" value="M" id="male" />
+                <label for="male">M</label>
+                <input type="radio" name="gender" value="F" id="female" />
+                <label for="female">F</label>
+            </div>
+            <div class="submit">
+                <input type="submit" name="submit2" value="submit2" />
+            </div>
+        </div>
+        <a href="index.html">index</a>
+    </body>
+</html>

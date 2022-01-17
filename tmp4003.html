@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>tmp4003</title>
+    </head>
+    <body>
+        <h1 id="top">This is tmp4003!!</h1>
+        <form action="index.html" method="get">
+            <label>搜索:
+                <input type="search" name="search" placeholder="搜一下" size="60" maxlength="130"/>
+                <input type="submit" value="搜索" />
+            </label>
+        </form>
+        <form action="index.html" method="post">
+            <p>Username:
+                <input type="text" name="username" size="15"
+                maxlength="30" />
+            </p>
+            <p>
+                What do you think of this gig?<br />
+                <textarea name="comments" cols="20" rows="4">
+                    Enter your comments...
+                </textarea>
+            </p>
+            <p>
+                What is your GPA?<br />
+                <input id="4.0" type="checkbox" name="gpa" value="4.0" />
+                <label for="4.0">4.0</label>
+                <input id="3.0" type="checkbox" name="gpa" value="3.0" />
+                <label for="3.0">3.0</label>
+                <input id="1.0" type="radio" name="gpa" value="1.0" checked="checked" />
+                <label for="1.0">1.0</label>
+            </p>
+            <p>
+                Which school are you in?<br />
+                <select name="school" size="4" multiple="multiple">
+                    <option value="pku">PKU</option>
+                    <option value="thu" selected="selected">Thu</option>
+                    <option value="sjtu">Sjtu</option>
+                    <option value="fdu">Fdu</option>
+                </select>
+            </p>
+            <p>
+                Upload your photo<br />
+                <input type="file" name="photo" />
+            </p>
+            <button>
+                <img src="tmpimg/bald eagle.jpg" alt="bald eagle" width="20" height="20" /> Add
+            </button>
+            <p>
+                <fieldset>
+                    <legend>Contact details</legend>
+                    <label>Email:<br />
+                    <input type="email" name="email"></label><br />
+                    <label>Tel:<br />
+                    <input type="text" name="tel"></label><br ?>
+                    <label>Address:<br />
+                    <input type="text" name="addr" required="required"></label>
+                </fieldset>
+            </p>
+            
+            <p>
+                <input type="hidden" name="hidden" value="hello" />
+                <input type="submit" value="finished!" />
+            </p>
+            <p>
+                <label>Date:
+                    <input type="date" name="date" />
+                </label>
+            </p>
+        </form>
+    </body>
+</html>
