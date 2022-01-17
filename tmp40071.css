@@ -1,0 +1,32 @@
+body{
+    
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    text-align: justify;
+}
+p{
+    margin: 0px;
+    padding : 10px;
+}
+p.alan{
+    background-color:hsla(225, 100%, 50%, 0.2);
+    margin:inherit;
+    padding:inherit;
+    font-weight: bold;
+    font-style:italic;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px hsla(200,100%, 50%, 0.3);
+    text-indent: 20px;
+}
+p.fu{
+    background-color: hsla(0,100%, 50%, 0.3);
+    margin:inherit;
+    padding:inherit;
+}
+p i{
+    color: yellowgreen;
+}
+p b{
+    color: tomato;
+}
