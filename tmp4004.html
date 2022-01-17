@@ -1,0 +1,62 @@
+<html>
+    <!--
+        this is a textbook progect written by self
+    -->
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="index.html">
+            <p>
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label>Name: 
+                        <input type="text" name="name" required="required" />
+                    </label>
+                    <br />
+                    <br />
+                    <label>Email : 
+                        <input type="email" name="email" />
+                    </label>
+                </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Your Review:</legend>
+                    <label>How did you hear about us?
+                        <select name="hear">
+                            <option value="google">google</option>
+                            <option value="baidu">baidu</option>
+                            <option value="god">god</option>
+                        </select>
+                    </label>
+                    <br />
+                    <br />
+                    <label>Would you visit again?<br />
+                        <input id="yes" type="radio" name="again" value="yes" checked="checked"/>
+                        <label for="yes">yes</label>
+                        <input id="no" type="radio" name="again" value="no" />
+                        <label for="no">no</label>
+                        <input id="not sure" type="radio" name="again" value="not sure" />
+                        <label for="not sure">not sure</label>
+                    </label>
+                    <br />
+                    <br />
+                    <label>Comments:<br />
+                        <textarea name="comments" cols="50" rows="4">Enter your comments:
+                        </textarea>
+                    </label>
+                    <br />
+                    <br />
+                    <input id="update" type="checkbox" name="update" checked="checked"/>
+                    <label for="update">Sign me up for email updates</label>
+                    <br />
+                    <br />
+                    <input type="submit" value="submit review" />
+                </fieldset>
+            </p>
+        </form>
+        
+        
+    </body>
+</html>

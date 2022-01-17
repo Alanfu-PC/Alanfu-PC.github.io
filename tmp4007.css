@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Verdana, sans-serif;
+    text-align:justify;
+}
+h1, h2{
+    color: #8c0000;
+    background-color: rgb(185,179,175);
+}
+p{
+    color: #8C0000;
+    
+}
+div#website ul li a{
+    text-decoration: none;
+}
